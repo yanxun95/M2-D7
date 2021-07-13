@@ -1,0 +1,44 @@
+/* Ex1 */
+div.jumbotron .col-md-6 h1 {
+  color: blue;
+}
+
+/* Ex2 */
+div.nav-scroller .nav a {
+  color: yellow !important;
+}
+
+/* Ex3 */
+div.jumbotron .col-md-6 p.lead.mb-0 a {
+  color: blanchedalmond !important;
+}
+
+/* Ex4 */
+div.col-md-8.blog-main .blog-post:first-of-type {
+  color: gray !important;
+}
+
+/* Ex5 */
+div.nav-scroller .nav a:nth-child(even) {
+  color: red !important;
+}
+
+/* Ex6 */
+div.col-md-8.blog-main .blog-post:last-of-type {
+  color: brown !important;
+}
+
+/* Ex7 */
+aside.col-md-4.blog-sidebar div:nth-child(2) ol > * a {
+  color: brown !important;
+}
+
+/* Ex8 */
+div.col-md-8.blog-main div:nth-child(3) {
+  color: pink !important;
+}
+
+/* Ex10 */
+body footer p + p a {
+  color: teal;
+}
