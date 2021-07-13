@@ -10,8 +10,10 @@ const ex11 = () => {
 ex11();
 
 const ex12 = () => {
-    let x = document.getElementsByTagName("h1")[0];
-    x.innerHTML = "Title has been change";
+    // let x = document.getElementsByTagName("h1")[0];
+    // x.innerHTML = "Title has been change";
+    let y = document.querySelector("h1");
+    y.innerHTML = "Title has been change";
 }
 ex12();
 
@@ -36,6 +38,39 @@ ex15();
 const ex16 = () => {
     let x = document.getElementsByClassName("col-4 d-flex justify-content-end align-items-center")[0].children[0].children[0];
     x.remove();
-    console.log(x)
 }
 ex16();
+
+const ex17 = () => {
+    let x = document.getElementsByClassName("blog-post");
+    for (let i = 0; i < x.length; i++){
+        let y = x[i].children[2].innerText.split(" ").join("");
+        let newText = y.slice(0,50)
+         x[i].children[2].innerText = newText;
+    }
+}
+ex17();
+
+const ex18 = () => {
+    //let x = document.querySelector(".col-md-8 .blog-main")
+    let x = document.getElementsByClassName("col-md-8 blog-main");
+    let div = document.createElement("div");
+    let tittle = document.createElement("tittle");
+    tittle.innerHTML = "NewDiv";
+    div.appendChild(tittle)
+    console.log(div)
+    x.appendChild(div)
+}
+
+const ex20 = () => {
+    let x = document.querySelectorAll(".blog-post-meta a");
+    for (let i of x){
+        i.addEventListener("mouseenter", alertFunction)
+    }
+}
+
+const alertFunction = (event) => {
+  alert(event.target.innerText);
+}
+ex20();
+    
